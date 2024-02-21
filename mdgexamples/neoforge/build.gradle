@@ -1,0 +1,21 @@
+import org.groovymc.modsdotgroovy.core.Platform
+
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'net.neoforged.gradle.userdev' version '7.0.80'
+}
+
+tasks.configureEach {
+    if (it.name.startsWith('neoForm')) it.enabled = false
+}
+
+modsDotGroovy {
+    platform = Platform.NEOFORGE
+    inferGather.set false
+    apply()
+}
+
+dependencies {
+    implementation 'net.neoforged:neoforge:20.4.167'
+}

@@ -1,0 +1,3 @@
+NeoForgeModsDotGroovy.make {
+    license = 'MIT'
+}

@@ -1,0 +1,14 @@
+plugins {
+    id 'org.groovymc.modsdotgroovy' version '2.0.0-beta.10' apply false
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.groovymc.modsdotgroovy'
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+}
