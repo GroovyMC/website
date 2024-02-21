@@ -13,7 +13,7 @@ adding support for new platforms and functionality.
 To start using mods.groovy, simply add the plugin to your `build.gradle`:
 ```groovy
 plugins {
-    id 'org.groovymc.modsdotgroovy' version '2.0.0'
+    id 'org.groovymc.modsdotgroovy' version '2.0.0-beta.7'
 }
 ```
 
