@@ -140,6 +140,7 @@ const config = {
       prism: {
         theme: prismThemes.oneLight,
         darkTheme: prismThemes.vsDark,
+        additionalLanguages: ['java', 'gradle', 'groovy']
       },
     }),
 };
