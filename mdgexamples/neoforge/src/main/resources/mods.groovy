@@ -31,7 +31,7 @@ NeoForgeModsDotGroovy.make {
         // The version of the mod. You can hardcode this or use '${file.jarVersion}' to substitute it with the
         // Implementation-Version of the mod jar
         // Alternatively you can pull the version of your Gradle Project through the syntax specified below
-        version = buildProperties.version
+        version = environmentInfo.version
 
         // The authors of the mod
         authors = ['Myself', 'I']
@@ -53,7 +53,7 @@ NeoForgeModsDotGroovy.make {
             // Declare an optional JEI dependency
             mod('jei') {
                 // This dependency is against any version of JEI with the major component 17
-                versionRange = v('17.*')
+                versionRange = '17.*'
                 type = DependencyType.OPTIONAL
             }
         }
